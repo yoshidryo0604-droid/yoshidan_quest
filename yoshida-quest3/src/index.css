@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-retro: "Press Start 2P", system-ui, sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: var(--font-retro);
+  image-rendering: pixelated;
+  overflow: hidden;
+}
+
+/* Custom scrollbar for message log */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+}
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border: 2px solid #000;
+}
